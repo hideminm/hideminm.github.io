@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+h1 {
+    font-size: 72px;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: cursive;
+    text-align: justify;
+}
+
+.bleu {
+    color: #0075c2;
+}
+
+.blanc {
+    color: #ffffff;
+}
+
+.rouge {
+    color: rgb(218, 60, 65);
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+.box1 {
+    width: 100%;
+    background-color: #dedede;
+    font-size: 60px;
+}
+
+.box2 {
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888888;
+    display: block;
+    margin: 1em 1%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.box2 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box2 ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.box2 > ul > li > a > .caret {
+    border-top: 4px solid #aaaaaa;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+    -webkit-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+}
+
+.box2 > ul > li > a {
+    color: #aaaaaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.box2 > ul > li:hover {
+    background-color: rgb(218, 60, 65);
+}
+
+.box2 > ul > li:hover > a {
+    color: rgb(255, 255, 255);
+}
+
+.box2 > ul > li:hover > a > .caret {
+    border-top-color: rgb(255, 255, 255);
+}
+
+.box2 > ul > li > div {
+    background-color: rgb(218, 60, 65);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 165px;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.box2 > ul > li:hover > div {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.box2 > ul > li > div ul > li {
+    display: block;
+}
+
+.box2 > ul > li > div ul > li > a {
+    color: #ffffff;
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.box2 > ul > li > div ul > li:hover > a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.box3 {
+    font-size: 22px;
+    font-family: cursive;
+    background-image: url(../img_lien-materiel/pasapas.png);
+}
